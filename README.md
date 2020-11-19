@@ -1,1 +1,6 @@
 # Big-Data-Model-Comparison-By-Cloud-Computing
+## Data Sources:
+Our project is based on a dataset from Kaggle, which contains abundant information about top listed Youtube videos in several months from 10 different countries. The dataset contains 16 features including video title, tags, description, category, view count, dislike/like count, etc. The size of the dataset is quite large. Each table in the dataset represents a country and contains over 60,000 records. Our project will cover 3 out of the 10 countries: the United States, Great Britain, and Canada. The link of the dataset is: https://www.kaggle.com/datasnaek/youtube-new
+
+## Problem and Methods:
+Since the size of the dataset is large (180,000 Rows *16 Columns) and the dataset contains tremendous texting information, we intend to use Pyspark associating with AWS to conduct the research. We want to explore which video tags and video categories have the most likes, dislikes, comments, or views. In addition, we plan to use XGBoost algorithm to tune a classifier of assigning videos to correct categories with the help of the libraries of Spark.mlib, SparkGBM, and dmlc.xgboost4j. Lastly, we would like to use a timer to compare how much time the research will consume in the scenarios of running on Pyspark and on a local laptop.
